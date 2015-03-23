@@ -80,7 +80,7 @@
             imagePath: '//cdn.jsdelivr.net/jquery.jreject/1.0.2/images/'
         });      
     });
-    setEndPoint('http://avaloncentre.mallmaverick.com/api/v2/avaloncentre/all.json');
+    setEndPoint('http://portstreet.mallmaverick.com/api/v2/portstreet/all.json');
     sessionStorage.setItem('primary_locale', 'en-CA');
     sessionStorage.setItem('secondary_locale', 'fr-CA');
 </script>
