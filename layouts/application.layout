@@ -9,9 +9,9 @@
      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
      ga('create', 'UA Code Here', 'auto');
      ga('send', 'pageview');
+     
 </script>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +23,7 @@
 
 <script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/modernizr.custom.48287.js"></script>
 <!-- favicon -->
-<link rel="shortcut icon" href="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/70483e4f30054855ef30b8872dc7948d/10dundas_16favicon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="http://kodekloud.s3.amazonaws.com/sites/54ecad616e6f643c9b000000/bedbb63d07540a15acced1f280477539/AC_favicon.ico" type="image/x-icon" />
 
 <!-- jQuery Version 1.11.0 -->
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -45,7 +45,7 @@
     $(document).ready(function() {
         $.reject({  
             reject: { all: false, msie: 9 },  
-            header: 'Thanks for visiting 10 Dundas East', // Header Text  
+            header: 'Thanks for visiting Avalon Centre', // Header Text  
             paragraph1: 'Unfortunately your browser is not officially supported with our site', // Paragraph 1  
             paragraph2: 'For the best experience please install one of the many optional browsers below to proceed',  
             closeMessage: 'You may continue using the site however certain features and content may not be accessible. Thank you.',
@@ -80,7 +80,7 @@
             imagePath: '//cdn.jsdelivr.net/jquery.jreject/1.0.2/images/'
         });      
     });
-    setEndPoint('http://miltonmall.mallmaverick.com/api/v2/milton/all.json');
+    setEndPoint('http://avaloncentre.mallmaverick.com/api/v2/avaloncentre/all.json');
     sessionStorage.setItem('primary_locale', 'en-CA');
     sessionStorage.setItem('secondary_locale', 'fr-CA');
 </script>
@@ -89,21 +89,23 @@
     
     /*hyperlinks*/
     a{
-        color:#0664e6;
+        color:#999999;
         text-decoration:inherit;
     }
     
     /*hyperlink hover color*/
     a:hover{
-        
+        color:#999999 !important;
     }
     
     body{
         background:white;
     }
-    
+     p input[type='image']{
+       width:100% !important;
+   }
     header{
-        
+        background: #18498d;
     }
     
     .main_window{
@@ -120,18 +122,21 @@
         background: #d9534f !important;
         border-color:#d43f3a !important;
         text-align:center;
+        color:white !important;
     }
-     p input[type='image']{
-       width:100% !important;
-   }
+    
     /*menu colors*/
     .navbar .nav li a{
         color:white;
     }
+    .view_button {
+        background:#18498d !important;
+    }
     
     .navbar .nav li a:hover,.navbar .nav li a:active{
-        color:#c8c8c8;
+     
     }
+    
     
     .site_welcome_msg{
         font-size:22px !important;
@@ -152,29 +157,20 @@
         color:#18498d;
     }
     #social_media_wrapper a:hover{
-        color:white;
-        background:black;
+        color:white !important;
+        background:#18498d;
     }
     .map-mouse-over{
     /*set color of store highlight and hover over for SVG map*/
-    fill: #fdd2d4;
+    fill: #eaf1fb !important;
     }
     /*inside page banners*/
     .page_banner{
-        color:black;
-        /* For Safari 5.1 to 6.0 */
-        background: -webkit-linear-gradient(left,#6e6e6e,#bebdbd, #6e6e6e);
-        /* For Opera 11.1 to 12.0 */
-        background: -o-linear-gradient(left,#6e6e6e,#bebdbd, #6e6e6e);
-        /* For Fx 3.6 to 15 */
-        background: -moz-linear-gradient(left,#6e6e6e,#bebdbd, #6e6e6e);
-        /* Standard syntax */
-        background: linear-gradient(to right,#6e6e6e,#bebdbd, #6e6e6e); 
-        box-shadow: 0px 0px 30px lightgray inset;
+        background: #e3e8f1 !important;
     }
     
     #description_section{
-        
+        background: #e3e8f1 !important;
     }
     
     .section_header{}
@@ -182,14 +178,16 @@
         border-bottom:solid 1px #cccccc;
         padding-bottom:10px;
     }
-    
+    .breadcrumb > .active {
+    color: #18498d;
+}
     
     .right_column_header {
-        color: #009cde ;
+        color: #18498d ;
     }
     
     .navbar .nav li a:hover {
-        color:black !important;
+        color:#999999 !important;
     
     }
      .site-map-section a:hover {
@@ -216,16 +214,7 @@
                </a><a href="#" class="btn btn-navbar btn-default navbar-toggle" onclick="javascript:toggle_menu()"><span class="nb_left pull-left"><span class="fa fa-reorder"></span></span><p style="display:none">menu</p> </a></div>
                 <div class="mobile_menu" style="display:none">
                     <ul>
-                        <li><a href="#" onclick="javascript:toggle_submenu('directory_dd');">Store Directory <span class="caret"></span></a>
-                            <div id="directory_dd" class="submenu" style="display:none">
-                                <ul>
-                                    <li><a href="/stores">Store Directory</a></li>
-                                    <li><a href="/map">Centre Map</a></li>
-                                    <li><a href="/office_directory">Office Directory</a></li>
-                                </ul>    
-                            </div>
-                        </li>
-                        <li><a href="/events">Events</a></li>
+                        <li><a href="/stores">Store Directory</a></li>
                         <li><a href="/promotions">Promotions</a></li>
                         <li><a href="#" onclick="javascript:toggle_submenu('leasing_dd');">Leasing <span class="caret"></span></a>
                             <div id="leasing_dd" class="submenu" style="display:none">
@@ -235,13 +224,14 @@
                                 </ul>    
                             </div>
                         </li>
+                        <li><a href="/find_us">Find Us</a></li>
                         <li><a href="#" onclick="javascript:toggle_submenu('contact_dd');">Contact Us <span class="caret"></span></a>
                             <div id="contact_dd" class="submenu" style="display:none">
                                 <ul>
                                     <li><a href="/contact_us">Contact Us</a></li>
-                                    <li><a href="/find_us">Find Us</a></li>
                                     <li><a href="/about_us">About Us</a></li>
                                     <li><a href="/jobs">Jobs</a></li>
+                                   
                                 </ul>    
                             </div>
                         </li>
@@ -255,29 +245,30 @@
                             <ul class="dropdown-menu">
                                 <li><a href="/stores">Store Directory</a></li>
                                 <li id="menu_map"><a href="/map">Centre Map</a></li>
-                                <li><a href="/office_directory">Office Directory</a></li>
+                            
                             </ul> 
                          </li>
-                         <li id="event_link"><a href="/events">Events</a></li>
                          <li id="promotion_link"><a href="/promotions">Promotions</a></li>
                          <li id="leasing_link" class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Leasing <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="/leasing">Leasing</a></li>
                                 <li><a href="/photos">Photos</a></li>
                             </ul> 
+                           
                          </li>
+                          <li id="findus_link"><a href="/find_us">Find Us</a></li>
                          <li id="contact_link" class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">contact us <span class="caret"></span></a>
                              <ul class="dropdown-menu">
                                 <li><a href="/contact_us">Contact Us</a></li>
-                                <li><a href="/find_us">Find Us</a></li>
                                 <li><a href="/about_us">About Us</a></li>
                                 <li><a href="/jobs">Jobs</a></li>
+                                
                             </ul> 
                          </li>
                     </ul>
                </div>
           </div>
-          <div id="social_media_wrapper"> <a href="https://www.facebook.com/10DundasEast" target="_blank"><i class="fa fa-facebook"></i><p style="display:none">facebook</p></a> <a href="https://twitter.com/10DundasEast" target="_blank"><i class="fa fa-twitter"></i><p style="display:none">twitter</p></a><a href="http://instagram.com/10dundaseast" target="_blank"><i class="fa fa-instagram"></i><p style="display:none">instagram</p></a><a href="https://www.youtube.com/user/10DundasEast" target="_blank"><i class="fa fa-youtube"></i><p style="display:none">youtube</p></a></div>
+          <!--<div id="social_media_wrapper"> <a href="https://www.facebook.com/10DundasEast" target="_blank"><i class="fa fa-facebook"></i><p style="display:none">facebook</p></a> <a href="https://twitter.com/10DundasEast" target="_blank"><i class="fa fa-twitter"></i><p style="display:none">twitter</p></a><a href="http://instagram.com/10dundaseast" target="_blank"><i class="fa fa-instagram"></i><p style="display:none">instagram</p></a><a href="https://www.youtube.com/user/10DundasEast" target="_blank"><i class="fa fa-youtube"></i><p style="display:none">youtube</p></a></div>-->
           <a href="http://bentallkennedy.com/" target="_blank"><img class="property_logo" alt="logo" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/14d7e193a4e12033723bf919343b9d1f/bental-logo1.png"/></a>
      </div>
 </header>
@@ -292,13 +283,13 @@
             <div class="footer_teaser" style="margin-right:195px">
                 <h3 class="footer_text" style="font-size:17px;width:300px">Sign up and save</h3>
                 <p class="footer_text" style="width:300px;font-size:17px">Join our list and stay connected to be the first to hear about special sales & exclusive events!</p>
-                <form action="http://mobilefringe.createsend.com/t/d/s/tkyhii/" method="post" id="subForm">
+                <form action="http://mobilefringe.createsend.com/t/d/s/tuuydl/" method="post" id="subForm">
                     <label for="fieldEmail" style="display:none"> subscribe email </label>
-                    <input style="width:290px" class="search_input" id="fieldEmail" name="cm-tkyhii-tkyhii" type="email" required placeholder="enter email" /> 
+                    <input style="width:290px" class="search_input" id="fieldEmail" name="cm-tuuydl-tuuydl" type="email" required placeholder="enter email" /> 
                     <div class="checkbox footer_text" style="width:300px">
                         <span>
                         <label for="agree_terms" style="display:none">Agree Terms</label>
-                        <input type="checkbox" class="info_check" id="agree_terms" style="margin-left:-15px; width:15px" required/>&nbsp;I agree to receive emails from 10 Dundas East
+                        <input type="checkbox" class="info_check" id="agree_terms" style="margin-left:-15px; width:15px" required/>&nbsp;I agree to receive emails from Avalon Centre
                         </span>
                     </div>
                     <button class="btn btn-default feature-item-button"  data-i18n="general.submit">Submit</button>
@@ -407,14 +398,15 @@
                 <li>
                     <a href="/stores">Store Directory</a>
                 </li>
-                <li>
-                    <a href="/events">Events</a>
-                </li>
+               
                 <li>
                     <a href="/promotions">Promotions</a>
                 </li>
                 <li>
                     <a href="/leasing">Leasing</a>
+                </li>
+                 <li>
+                    <a href="/find_us">Find Us</a>
                 </li>
                 <li>
                     <a href="/contact_us">contact Us</a>
@@ -426,7 +418,7 @@
       <section class="copyright">
            <div class="container">
                 <div class="row">
-                     <div class="col-sm-6 col-md-6 footer-text"> ©2015 10 Dundas All rights reserved. <a href="/privacy_policy">Privacy Policy</a> | <a href="/tenant_services">Tenant Services</a> </div>
+                     <div class="col-sm-6 col-md-6 footer-text"> ©2015 Avalon Centre All rights reserved. <a href="/privacy_policy">Privacy Policy</a>  </div>
                      <div class="text-right col-sm-6 col-md-6 footer-text"> Powered by <a href="http://mallmaverick.com/" target="_blank">Mall Maverick</a> </div>
                 </div>
            </div>
@@ -461,8 +453,6 @@
         }
         
     }
-        
-
     if(navigator.appVersion.indexOf("MSIE 9.") == -1){
         
     } else {
@@ -592,10 +582,8 @@
                 } else {
                     $("#events_results_header").hide();
                 }
-                // $(document).i18n();
             }
         }
-        
         
         $('.close-search').click(function(){
             $('#search_results').hide();
