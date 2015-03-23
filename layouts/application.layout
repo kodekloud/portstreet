@@ -289,7 +289,7 @@
                     <div class="checkbox footer_text" style="width:300px">
                         <span>
                         <label for="agree_terms" style="display:none">Agree Terms</label>
-                        <input type="checkbox" class="info_check" id="agree_terms" style="margin-left:-15px; width:15px" required/>&nbsp;I agree to receive emails from Avalon Centre
+                        <input type="checkbox" class="info_check" id="agree_terms" style="margin-left:-15px; width:15px" required/>&nbsp;I agree to receive emails from Port Street Market
                         </span>
                     </div>
                     <button class="btn btn-default feature-item-button"  data-i18n="general.submit">Submit</button>
