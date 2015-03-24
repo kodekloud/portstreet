@@ -43,26 +43,26 @@
                             <tr>
                                 <td style="width:215px"><strong>Demographics:</strong></td>
                                 <td style="width:100px">1km</td>
-                                <td style="width:215px">3km</td>
-                                 <td style="width:215px">5km</td>
+                                <td style="width:100px">3km</td>
+                                 <td style="width:100px">5km</td>
                             </tr>
                             <tr>
                                 <td style="width:215px"><strong>Total Population:</strong></td>
                                 <td style="width:100px">6,698</td>
-                                <td style="width:215px">40,676</td>
-                                <td style="width:215px">125,358</td>
+                                <td style="width:100px">40,676</td>
+                                <td style="width:100px">125,358</td>
                             </tr>
                             <tr>
                                 <td style="width:215px"><strong>Total Households:</strong></td>
                                 <td style="width:100px">3,283</td>
-                                <td style="width:215px">15,458</td>
-                                <td style="width:215px">44,828</td>
+                                <td style="width:100px">15,458</td>
+                                <td style="width:100px">44,828</td>
                             </tr>
                             <tr>
                                 <td style="width:215px"><strong>Household Average Income:</strong></td>
                                 <td style="width:100px">$74,955</td>
-                                <td style="width:215px">$124,557</td>
-                                <td style="width:215px">$106,540</td>
+                                <td style="width:100px">$124,557</td>
+                                <td style="width:100px">$106,540</td>
                             </tr>
                         </table>
                         <br>
