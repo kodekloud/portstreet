@@ -94,14 +94,14 @@
                         if (val.promotionable_type == "Store") {
                             var store_details = getStoreDetailsByID(val.promotionable_id);
                             if ((store_details.store_front_url_abs).indexOf('missing.png') > -1) {
-                                val.alt_promo_image_url = "http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/dcd66cb0efbccf1a9dc76822e0b9da23/logo_10dundas.png"
+                                val.alt_promo_image_url = "http://kodekloud.s3.amazonaws.com/sites/55105a666e6f64696a000000/653aea5cd973240a7f02b3cdb5dfd19a/PS_default.jpg"
                             } else {
                                 val.alt_promo_image_url = (store_details.store_front_url_abs);    
                             }
                             
                             val.store_name = store_details.name
                         } else {
-                            val.alt_promo_image_url = "http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/dcd66cb0efbccf1a9dc76822e0b9da23/logo_10dundas.png"
+                            val.alt_promo_image_url = "http://kodekloud.s3.amazonaws.com/sites/55105a666e6f64696a000000/653aea5cd973240a7f02b3cdb5dfd19a/PS_default.jpg"
                         }
                         
                     } else {
