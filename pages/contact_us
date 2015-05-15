@@ -12,6 +12,26 @@
     <div class="inside_page_content">
         <div class="left_column">
             <img class="inside_banner_image" alt="banner" src="http://kodekloud.s3.amazonaws.com/sites/55105a666e6f64696a000000/8f5624a444a46bbf9a786f58773513a4/inside3.png"/>
+            <div class="show_mobile">
+                <p class="right_column_header">centre information</p>
+                <div id="centre_info_container_mobile">
+                    <script id="centre_info_template_mobile" type="x-tmpl-mustache/text">
+                        <p class="directory_content">{{name}}</p>
+                        <p class="directory_content">{{address1}}</p>
+                        <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
+                          <br>
+                    <p class="directory_content"><strong>Ezio DiGiorgi</strong> 
+                    <br>Property Manager
+                    <br>(416) 236-7244
+                    <br><a href="mailto:edigiorgi@bentallkennedy.com">edigiorgi@bentallkennedy.com</a></p>
+                    <br>
+                    <p class="directory_content"><strong>Garnet Peirson</strong> 
+                    <br>Director of Leasing
+                    <br>1.866.681.2715
+                    <br><a href="mailto:gpeirson@bentallkennedy.com">gpeirson@bentallkennedy.com</a></p>
+                    </script>
+                </div>
+            </div>
             <div id="send_contact_success" class="alert alert-success" role="alert" style="display:none">
               <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
               <span class="sr-only">Success</span>
@@ -25,6 +45,9 @@
              </div>
             <form name="contact_form" id="contact_form" method="post">
                 <div class="row" style="margin-left:-15px;margin-right:-15px">
+                 <div class="col-sm-12 col-md-12">
+                        <h5>We value your feedback. Send us your comments or questions by completing the contact form below.</h5>
+                    </div>
                     <div class="col-sm-6 col-md-6">
                         <label for="name">Name</label>
                         <input name="name" id="name" class="form-control" type="text" value="" required>
@@ -82,7 +105,7 @@
                     <br>Director of Leasing
                     <br>1.866.681.2715
                     <br><a href="mailto:gpeirson@bentallkennedy.com">gpeirson@bentallkennedy.com</a></p>
-                </script>
+                
                 </script>
             </div>
             
@@ -133,10 +156,11 @@
     			e.preventDefault();
     		}
     	});
-    $(document).ready(function() {
+      $(document).ready(function() {
         function renderAll (){
             var propertyDetails = getPropertyDetails();
             renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
+            renderPageData('#centre_info_container_mobile','#centre_info_template_mobile',propertyDetails, 'property_details')
             $("#loading_screen").hide();
             $("#main_content").show();
         }
